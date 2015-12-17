@@ -1,0 +1,75 @@
+.main-header{
+z-index:1;
+}
+span.badge.switch{
+  font-weight:normal;
+  font-size: 14px;
+  padding: 8px;
+  margin: -9px 5px -6px 0px;
+  border: 1px solid #999;
+}
+div.md {
+font-size: larger;
+}
+div.container{
+  padding-right: 2px;
+  padding-left: 2px;
+}
+.nav-tabs-custom>.tab-content {
+padding:5px 2px;
+}
+@media (max-width:767px){.fixed .content-wrapper,.fixed .right-side{padding-top:50px}}
+img.logoss{width: 25px;
+  height: 25px;
+}
+img.logos{width: 50px;
+  height: 50px;
+}
+img.qrcode{width: 128px;
+  height: 128px;
+  margin-left:40px;
+  margin-right:50px;
+}
+div.feature-item .fa{
+    color: #710A94;
+}
+div.news{
+margin-top:-20px;
+height:35px;
+font-size:16px;
+}
+.scrollUp a{
+padding:2px 4px;
+color:white;
+}
+.scrollUp p{
+padding:5px 5px;
+}
+.scrollUp span.text-greenl{
+color:#3BE597;
+}
+.scrollUp {
+  height:40px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  padding-top:1px;
+}
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+#toTop:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+span.ccy{
+font-style:italic;
+font-weight:normal;
+}
