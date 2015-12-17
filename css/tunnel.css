@@ -10,7 +10,12 @@ z-index:1;
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-div#pvchart,div#deepchart{
+div#pvchart{
+padding-left:10px;
+padding-top:6px;
+}
+div#txschart{
+padding-left:12px;
 padding-top:10px;
 }
 @media (max-width:767px){.fixed .content-wrapper,.fixed .right-side{padding-top:50px}}
@@ -18,9 +23,9 @@ img.logoss{width: 25px;
   height: 25px;
 }
 img.logos{
-  margin-top: -9px;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
+  margin:-8px 5px 0px 5px;
 }
 img.qrcode{width: 128px;
   height: 128px;
@@ -50,7 +55,7 @@ border:1px solid transparent;
 padding:9px 9px;
 }
 div#infotab{
-min-height:240px;
+min-height:243px;
 }
 span.badge.switch{
 font-weight:normal;
@@ -64,9 +69,12 @@ font-size: 18px;
   padding: 12px;
   margin:18px 10px 15px 47px
   }
+span.badge.register:hover{
+   background-color:#1BC578;
+}
 span.exchange{
 font-size:25px;
-padding:7px;
+padding:5px;
 }
 span#ask_price,span#bid_price{
 font-size:15px;
@@ -84,4 +92,7 @@ font-weight:normal;
 table.dataTable tbody td.HL_Num,table.dataTable tbody td.HL_Price{
 font-size:19px;;
 /*padding:5px 10px;*/
+}
+.lead {
+    font-size: 19px;
 }

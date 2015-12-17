@@ -57,7 +57,7 @@ function RefreshData() {
 
         $('#pvchart').sparkline(datedata['volume'], {type: 'bar',barColor: '#00a65a',height: '55px', barWidth: '12px'});
         $('#pvchart').sparkline(datedata['price'], {composite: true, spotRadius:3, fillColor: false, lineColor: 'red'});
-        $('#txschart').sparkline(datedata['txs'], {type: 'bar',barColor: '#888',height: '30px',barSpacing:'4px', barWidth: '9px'});
+        $('#txschart').sparkline(datedata['txs'], {type: 'bar',barColor: '#888',height: '30px',barSpacing:'5px', barWidth: '8px'});
 
         $('#todayvol').html(datedata['volume'][datedata['volume'].length - 1]);
         var volchange = datedata['volume'][datedata['volume'].length - 1] - datedata['volume'][datedata['volume'].length - 2];
@@ -151,7 +151,7 @@ $(document).ready(function() {
                 "render": function ( data, type, row ) {
                     if(row[1]=='RegisterReq'){return '<span class="text-blue"><i class="fa fa-fw fa-link"></i>Register</span>';}
                     else if(row[1]=='TubeOut'){return '<span class="text-green"><i class="fa fa-fw fa-exchange"></i>Exchange</span';}
-                    else if(row[1]=='Refund'){return '<span class="text-yellow"><i class="fa fa-fw fa-undo"></i>Refund</span>';}
+                    else if(row[1].search('Refund')>=0){return '<span class="text-yellow"><i class="fa fa-fw fa-undo"></i>Refund</span>';}
                 },
                 "targets": 0
             },
@@ -191,7 +191,7 @@ $(document).ready(function() {
 } );
 $("#libctx").click(function(){
 var table = $('#tabbctx').DataTable( {
-        "lengthMenu": [[10, 20, 50, -1], [10, 20, 50, "All"]],
+        "lengthMenu": [[12, 25, 60, -1], [12, 25, 60, "All"]],
         "ajax": jpath+'bctx.json',
         responsive: true,
         "bRetrieve": true,
@@ -246,3 +246,4 @@ var table = $('#addrpair').DataTable( {
         }
     } );
 });
+/*todo: add a fresh button to data table */
