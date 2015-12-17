@@ -239,6 +239,10 @@ var table = $('#addrpair').DataTable( {
         {"data":"3"},
         {"data":"4"},
         ],
-        "order": [[ 0, "desc" ]]
+        "order": [[ 0, "desc" ]],
+        "initComplete": function () {
+            $(table.column( 1 ).nodes() ).addClass( 'lead' );
+            $(table.column( 2 ).nodes() ).addClass( 'lead' );
+        }
     } );
 });
