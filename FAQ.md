@@ -12,4 +12,6 @@ The price is fixed to the median of the prices from 5 data providers, including 
 
 The exchange spread is set at 0.2%. The transaction fee rate is 0.2%.
 
+- **What is the minimun amount of TubeIn transaction?**
 
+The minimun is 100 NBT or 0.2 BTC.
