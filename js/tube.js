@@ -73,7 +73,7 @@ RefreshData();
 setTimeout(RefreshData, 2*60*1000);
 
 $(function () {
-  $(".navbar-nav .dropdown-menu li:not(.treeview) a").click(function () {
+  $("a.anchor").click(function () {
     var $this = $(this);
     var target = $this.attr("href");
     if (typeof target === 'string') {
