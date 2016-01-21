@@ -10,7 +10,7 @@ The price is fixed to the median of the prices from 5 data providers, including 
 
 - **What is the exchange spread and transaction fee rate?**
 
-The exchange spread is set at 0.4%. The transaction fee rate is 0.2%.
+The exchange spread is set at 0.3%. The transaction fee rate is 0.1%.
 
 - **What is the tips to use the Tube?**
 
