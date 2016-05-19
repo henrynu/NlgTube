@@ -17,3 +17,8 @@ The exchange spread is set at 0.1%. The transaction fee rate is 0.1%.
 1. The registration magic numbers will be regenerated if you reload the NuLagoon website. Don't reload the website before you send the both NBT and BTC register request transactions. Register request will be active in searching another request to build addr pair for 1 day.
 
 2. Before sending the exchange tansaction, please check the "Live Addr Pairs" to see if your pair is sucessfully registered. Otherwies your transaction will be marked invalidIn and be refunded.
+
+
+- **How could I to change my registred address pair?**
+
+If one of your address you filled in the register form is already registered, the registration will failed. You can only change your registered address pair by sending register request NuBits and Bitcoin transactions.
